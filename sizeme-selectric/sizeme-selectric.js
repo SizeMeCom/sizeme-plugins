@@ -10,7 +10,7 @@
                     element.dispatchEvent(new Event("change"));
                 });
 
-                this.addEventListener("change", function () {
+                this.addEventListener("sizemeChange", function () {
                     if ($element.data("currIndex") !== element.value) {
                         $element.selectric("refresh");
                     }
