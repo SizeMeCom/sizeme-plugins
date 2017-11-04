@@ -1,4 +1,4 @@
 sizeme-plugins
 ==============
 
-- [sizeme-selectric](sizeme-selectric/README.md)
+- [sizeme-selectric](sizeme-selectric)
