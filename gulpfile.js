@@ -1,11 +1,17 @@
 const gulp = require("gulp");
 const babel = require("gulp-babel");
-const minify = require("gulp-minify");
-const cleanDest = require("gulp-clean-dest");
+const del = require("del");
+const runSequence = require("run-sequence");
+require("gulp-release-tag")(gulp);
 
-gulp.task("default", () =>
+gulp.task("clean", () =>
+    del([
+        "dist"
+    ])
+);
+
+gulp.task("default", ["clean"], () =>
     gulp.src("sizeme-selectric.js")
-        .pipe(cleanDest("dist"))
         .pipe(babel({
             presets: [
                 ["env", {
@@ -21,11 +27,7 @@ gulp.task("default", () =>
             ],
             plugins: ["transform-class-properties"]
         }))
-        .pipe(minify({
-            ext: {
-                src: ".js",
-                min: ".min.js"
-            }
-        }))
         .pipe(gulp.dest("dist"))
 );
+
+gulp.task("make-release", () => runSequence("default", "release"));
