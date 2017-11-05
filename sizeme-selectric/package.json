@@ -1,0 +1,18 @@
+{
+  "name": "sizeme-selectric",
+  "version": "0.0.1",
+  "main": "sizeme-selectric.js",
+  "repository": "https://github.com/SizeMeCom/sizeme-plugins/tree/master/sizeme-selectric",
+  "author": "tjjalava",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean-dest": "^0.2.0",
+    "gulp-minify": "^1.0.0"
+  }
+}
