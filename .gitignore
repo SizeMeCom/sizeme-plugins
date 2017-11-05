@@ -35,6 +35,6 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-*/node_modules
+node_modules
 dist
 
