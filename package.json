@@ -1,6 +1,6 @@
 {
   "name": "sizeme-selectric",
-  "version": "0.9.10",
+  "version": "1.0.0",
   "main": "sizeme-selectric.js",
   "repository": "https://github.com/SizeMeCom/sizeme-plugins/tree/master/sizeme-selectric",
   "author": "tjjalava",
